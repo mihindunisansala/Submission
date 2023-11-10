@@ -1,5 +1,6 @@
-# Submission name
+# Submission 
 
+This project will develop a simple console application that manages a list of users.
 
 
 ## Build project in a Linux environment stepby - 
