@@ -3,7 +3,7 @@
 This project will develop a simple console application that manages a list of users.
 
 
-## Build project in a Linux environment stepby - 
+## Build project in a Linux environment  - 
 
 ### 1.Git clone project using HTTPS / SSH / Github CLI
     git clone https://github.com/mihindunisansala/Submission.git
