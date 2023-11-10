@@ -24,21 +24,29 @@ public class UserList {
         userList.removeIf(user -> user.getId() == userId);
     }
 
-    // Method to retrieve users
+    // Method to retrieve userlist
     public List<User> getUsers() {
         return userList;
     }
 
     // Method to search for a user by ID
     public User searchUserById(int userId) {
-        for (User user : userList) {
-            if (user.getId() == userId) {
-                return user;
-            }
-        }
-        return null; // User not found
-    }
 
+
+        try {
+            for (User user : userList) {
+                if (user.getId() == userId) {
+                    return user;
+                }
+            }
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            //  error handling...
+        }
+
+        return null;
+    }
     // Method to sort users by name
     public void sortUsersByName() {
         Collections.sort(userList, Comparator.comparing(User::getName));
