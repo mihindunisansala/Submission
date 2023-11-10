@@ -1,4 +1,4 @@
-# Submission 
+# List of users 
 
 This project will develop a simple console application that manages a list of users.
 
