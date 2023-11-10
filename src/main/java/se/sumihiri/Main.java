@@ -1,5 +1,7 @@
 package se.sumihiri;
+
 import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -7,10 +9,9 @@ public class Main {
 
             // Adding users
             userList.addUser(new User(1, "Hans Karlsson", "hans@karlsson.com"));
-            userList.addUser(new User(2, "Sofia Hultin", "sofia@gmail.com"));
-            userList.addUser(new User(3, "Niklas Berg", "nick@gmail.com"));
-
-            // Displaying users
+            userList.addUser(new User(2, "Niklas Berg", "nick@gmail.com"));
+            userList.addUser(new User(3, "Sofia Hultin", "sofia@gmail.com"));
+            // Displayg users
             System.out.println("Users:");
             List<User> users = userList.getUsers();
             for (User user : users) {

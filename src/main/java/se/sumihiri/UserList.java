@@ -4,9 +4,10 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-public class UserList {
 
-    public List<User> userList;
+
+public class UserList {
+    private List<User> userList;
 
     // Constructor
     public UserList() {
@@ -18,26 +19,28 @@ public class UserList {
         userList.add(user);
     }
 
-    public List<User> deleteUser(int userId) {
+    // Method to delete a user
+    public void deleteUser(int userId) {
         userList.removeIf(user -> user.getId() == userId);
+    }
 
-        public List<User>getUsers () {
-            return userList;
-        }
+    // Method to retrieve users
+    public List<User> getUsers() {
+        return userList;
+    }
 
-        public User searchUserById( int)
-
+    // Method to search for a user by ID
+    public User searchUserById(int userId) {
         for (User user : userList) {
             if (user.getId() == userId) {
-                return (List<User>) user;
-            }
-
-
-            public void sortUsersByName () {
-                Collections.sort(userList, Comparator.comparing(User::getName));
-
+                return user;
             }
         }
-    }}
+        return null; // User not found
+    }
 
-
+    // Method to sort users by name
+    public void sortUsersByName() {
+        Collections.sort(userList, Comparator.comparing(User::getName));
+    }
+}
