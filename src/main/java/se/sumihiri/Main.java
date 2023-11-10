@@ -9,7 +9,7 @@ public class Main {
 
             // Adding users
             userList.addUser(new User(1, "Hans Karlsson", "hans@karlsson.com"));
-            userList.addUser(new User(2, "Niklas Berg", "nick@gmail.com"));
+            userList.addUser(new User(2, "Susan Berg", "susan@gmail.com"));
             userList.addUser(new User(3, "Sofia Hultin", "sofia@gmail.com"));
             // Displayg users
             System.out.println("Users:");
@@ -17,9 +17,10 @@ public class Main {
             for (User user : users) {
                 System.out.println("ID: " + user.getId() + ", Name: " + user.getName() + ", Email: " + user.getEmail());
             }
-            int searchUserId = 2;
+            int searchUserId = 3;
             User foundUser = userList.searchUserById(searchUserId);
             System.out.println("\nSearching for User with ID " + searchUserId + ":");
+
             if (foundUser != null) {
                 System.out.println("User found - Name: " + foundUser.getName() + ", Email: " + foundUser.getEmail());
             } else {

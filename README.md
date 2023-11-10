@@ -1,6 +1,8 @@
 # List of users 
 
 This project will develop a simple console application that manages a list of users.
+The application has written in Java and use object-oriented principles and data structures.
+
 
 
 ## Build project in a Linux environment  - 
@@ -59,12 +61,12 @@ public void addUser(User user) {
     public void sortUsersByName() {
         Collections.sort(userList, Comparator.comparing(User::getName));
     }
-}
+
 ```
 
 ### `Main.java`
 -This file is the entry point and will call the user to manage user list
--This Java console application creates a UserList, adds users, displays them, searches for a user by ID, and sorts users by name. You can run this application to see the results!
+-This Java console application creates a UserList, adds users, displays them, searches for a user by ID, and sorts users by name. This application can run and to see the results!
 -Create the Java console application to test the functionality
 ### `User.java`
 -Project start with the User class
